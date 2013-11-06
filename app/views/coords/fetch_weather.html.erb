@@ -1,21 +1,51 @@
+
 <h1>Weather Lookup</h1>
 
+<form>
+<div>
+    <label for="the_address">Address:</label>
+    <input id="the_address" type="text" name="address" value=" ">
+ </div>
+ <div>
+    <input type="submit" value="Get the weather">
+  </div>
+</form>
+
 <dl>
-  <dt>Latitude:</dt>
-  <dd><%= @latitude %></dd>
-
-  <dt>Longitude:</dt>
-  <dd><%= @longitude %></dd>
-
-  <dt>Current temperature:</dt>
+<dt>Latitude:</dt>
+  <dd><%=@latitude%></dd>
+<dt>Longitude:</dt>
+  <dd><%=@longitude%></dd>
+<dt>Current temperature:</dt>
   <dd><%= @temperature %></dd>
-
-  <dt>Summary for the hour:</dt>
+<dt>Summary for the hour:</dt>
   <dd><%= @minutely_summary %></dd>
-
-  <dt>Summary for the day:</dt>
+<dt>Summary for the day:</dt>
   <dd><%= @hourly_summary %></dd>
-
-  <dt>Summary for the week:</dt>
+<dt>Summary for the week:</dt>
   <dd><%= @daily_summary %></dd>
+
 </dl>
+
+
+
+<!--Previous backup data <form>
+<div>
+    <label for="latitude">Latitude:</label>
+    <input id="latitude" type="text" name="latitude" value="42.0538387">
+</div>
+<div>
+    <label for="longitude">Longitude:</label>
+    <input id="longitude" type="text" name="longitude" value="-87.67721">
+ </div>
+
+ <div>
+    <input type="submit" value="Get Weather">
+  </div>
+</form> 
+<p> <%=@address%></p>
+<p> <%=@url_weather%></p>
+<p> <%=@latitude%></p>
+<p> <%=@longitude%></p>
+<p> <%=@parsed_data_weather.keys%></p>
+-->
